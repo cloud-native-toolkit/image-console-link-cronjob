@@ -15,7 +15,7 @@ jobs:
       - name: Set up tags
         id: setup
         run: |
-          TAG_BASE="quay.io/ibmgaragecloud/cli-tools"
+          TAG_BASE="quay.io/cloudnativetoolkit/console-link-cronjob"
 
           BRANCH=${GITHUB_REF#refs/heads/}
           TAG="${{ github.event.release.tag_name }}"
