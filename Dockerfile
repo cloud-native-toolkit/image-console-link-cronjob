@@ -12,3 +12,4 @@ RUN curl -Lo /usr/bin/jq https://github.com/stedolan/jq/releases/download/jq-1.6
 RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && \
   install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
+RUN curl -sL shell.cloudnativetoolkit.dev | sh -
